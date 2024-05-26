@@ -11,6 +11,13 @@ tags
 # project data that shouldn't be committed
 models
 data
+.data/
+Test_comparative/Results*
+
+# exclude large files that are tracked by Git LFS
+!.data/**/*.tfrecord
+!.data/**/*.tar.gz
+!train_test_data/**/*.npy
 
 # other
 *tmp*
